@@ -1,28 +1,12 @@
 
 import { ShoppingBag, X } from "lucide-react";
 import { useCart } from "@/hooks/useCart";
-import { useState } from "react";
-import { toast } from "@/components/ui/sonner";
 
 const Cart = () => {
-  const { cart, removeFromCart, updateQuantity, clearCart } = useCart();
-  const [isCheckingOut, setIsCheckingOut] = useState(false);
+  const { cart, removeFromCart, updateQuantity } = useCart();
   
   // Calculate total price
   const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-  
-  const handleCheckout = () => {
-    setIsCheckingOut(true);
-    
-    // Simulate checkout process with a timeout
-    setTimeout(() => {
-      toast.success("Order successfully placed", {
-        description: "Thank you for your order!",
-      });
-      clearCart();
-      setIsCheckingOut(false);
-    }, 1500);
-  };
   
   if (cart.length === 0) {
     return (
@@ -84,14 +68,8 @@ const Cart = () => {
           <span>Total:</span>
           <span>₹{total.toFixed(2)}</span>
         </div>
-        <button 
-          className={`w-full mt-3 bg-primary text-white py-2 rounded-lg transition-colors ${
-            isCheckingOut ? 'opacity-70 cursor-not-allowed' : 'hover:bg-primary/90'
-          }`}
-          onClick={handleCheckout}
-          disabled={isCheckingOut}
-        >
-          {isCheckingOut ? 'Processing...' : 'Checkout'}
+        <button className="w-full mt-3 bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition-colors">
+          Checkout
         </button>
       </div>
     </div>
