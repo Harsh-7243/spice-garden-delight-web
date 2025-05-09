@@ -17,12 +17,12 @@ const MenuCard = ({ item }: MenuCardProps) => {
     
     toast({
       description: `${item.name} added to your order`,
-      className: "bg-primary text-white border-none",
+      className: "bg-spice-deepRed text-spice-gold border-spice-gold border",
     });
   };
   
   return (
-    <div className="menu-card h-full">
+    <div className="menu-card h-full hover:shadow-[0_0_15px_rgba(255,215,0,0.3)]">
       <div className="relative mb-3">
         <img 
           src={item.image}
@@ -43,14 +43,14 @@ const MenuCard = ({ item }: MenuCardProps) => {
       </div>
       
       <div className="flex-1">
-        <h3 className="font-semibold text-lg mb-1">{item.name}</h3>
+        <h3 className="font-semibold text-lg mb-1 text-spice-gold">{item.name}</h3>
         <div className="flex justify-between items-center mb-3">
-          <p className="text-primary font-medium">₹{item.price}</p>
+          <p className="text-spice-gold font-medium">₹{item.price}</p>
           <div className="flex">
             {Array.from({ length: 5 }).map((_, index) => (
               <svg 
                 key={index}
-                className={`w-4 h-4 ${index < item.rating ? 'text-yellow-400' : 'text-gray-300'}`}
+                className={`w-4 h-4 ${index < item.rating ? 'text-spice-gold' : 'text-spice-gold/30'}`}
                 aria-hidden="true" 
                 xmlns="http://www.w3.org/2000/svg" 
                 fill="currentColor" 
@@ -61,12 +61,12 @@ const MenuCard = ({ item }: MenuCardProps) => {
             ))}
           </div>
         </div>
-        <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{item.description}</p>
+        <p className="text-sm text-spice-gold/70 mb-4 line-clamp-2">{item.description}</p>
       </div>
       
       <button 
         onClick={handleAddToCart}
-        className="w-full bg-primary hover:bg-primary/90 text-white py-2 rounded-lg transition-colors mt-auto"
+        className="w-full bg-spice-deepRed hover:bg-spice-deepRed/90 text-spice-gold py-2 rounded-lg transition-all gold-glow mt-auto"
       >
         Add to Order
       </button>

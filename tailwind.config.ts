@@ -55,6 +55,9 @@ export default {
 				},
 				// Custom colors for Spice Garden
 				spice: {
+					darkBrown: '#3e2723',
+					gold: '#ffd700',
+					deepRed: '#b71c1c',
 					turmeric: '#FEF7CD',
 					saffron: '#FEC6A1',
 					mint: '#F2FCE2',
@@ -96,6 +99,10 @@ export default {
 				'scale-in': {
 					'0%': { transform: 'scale(0.95)', opacity: '0' },
 					'100%': { transform: 'scale(1)', opacity: '1' }
+				},
+				'glow': {
+					'0%, 100%': { boxShadow: '0 0 5px #ffd700, 0 0 10px #ffd700' },
+					'50%': { boxShadow: '0 0 15px #ffd700, 0 0 20px #ffd700' }
 				}
 			},
 			animation: {
@@ -105,11 +112,13 @@ export default {
 				'fade-out': 'fade-out 0.3s ease-out',
 				'slide-up': 'slide-up 0.3s ease-out',
 				'slide-down': 'slide-down 0.3s ease-out',
-				'scale-in': 'scale-in 0.2s ease-out'
+				'scale-in': 'scale-in 0.2s ease-out',
+				'glow': 'glow 2s ease-in-out infinite'
 			},
 			fontFamily: {
 				'playfair': ['"Playfair Display"', 'serif'],
-				'poppins': ['Poppins', 'sans-serif']
+				'poppins': ['Poppins', 'sans-serif'],
+				'garamond': ['Garamond', 'serif']
 			}
 		}
 	},

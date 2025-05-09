@@ -21,13 +21,13 @@ const Menu = () => {
     : menuItems.filter(item => item.category === activeCategory);
   
   return (
-    <section id="menu" className="py-20 bg-secondary/30">
+    <section id="menu" className="py-20 bg-spice-darkBrown/95">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4 gold-gradient">
             Delicious Menu
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-spice-gold/80 max-w-2xl mx-auto">
             Explore our carefully crafted menu featuring authentic Indian recipes prepared 
             with the finest ingredients and traditional spices.
           </p>
@@ -43,8 +43,8 @@ const Menu = () => {
                 className={`
                   whitespace-nowrap px-6 py-3 rounded-full font-medium transition-all
                   ${activeCategory === category.id 
-                    ? 'bg-primary text-white' 
-                    : 'bg-white text-foreground hover:bg-primary/10'
+                    ? 'bg-spice-deepRed text-spice-gold' 
+                    : 'bg-spice-darkBrown border border-spice-gold/30 text-spice-gold hover:border-spice-gold gold-glow'
                   }
                 `}
               >
