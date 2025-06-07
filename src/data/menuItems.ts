@@ -28,7 +28,7 @@ export const menuItems: MenuItem[] = [
     name: "Paneer Tikka Masala",
     description: "Cubes of cottage cheese marinated in spices and grilled to perfection.",
     price: 280,
-    image: "https://images.unsplash.com/photo-1567188040759-fb8a5678c4d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFuZWVyJTIwdGlra2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    image: "https://kannanskitchen.com/wp-content/uploads/2023/01/DSC_4737-500x500.jpg",
     category: "main",
     isVegetarian: true,
     rating: 4.7
@@ -78,7 +78,7 @@ export const menuItems: MenuItem[] = [
     name: "Gulab Jamun",
     description: "Deep-fried milk solids soaked in rose-flavored sugar syrup.",
     price: 150,
-    image: "https://images.unsplash.com/photo-1546101269-7362c69542b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3VsYWIlMjBqYW11bnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    image: "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg",
     category: "desserts",
     isVegetarian: true,
     rating: 4.9
@@ -88,7 +88,7 @@ export const menuItems: MenuItem[] = [
     name: "Kheer",
     description: "Creamy rice pudding flavored with cardamom, saffron, and garnished with nuts.",
     price: 180,
-    image: "https://images.unsplash.com/photo-1528207776546-365bb710ee93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a2hlZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Pp67YoVcbOJs_C14ZcBK9tCzxzNQ3VKvUA&s",
     category: "desserts",
     isVegetarian: true,
     rating: 4.6
@@ -118,7 +118,7 @@ export const menuItems: MenuItem[] = [
     name: "Palak Paneer",
     description: "Cottage cheese cubes in a creamy spinach gravy flavored with spices.",
     price: 260,
-    image: "https://images.unsplash.com/photo-1596797038530-2c107aa7a10b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFsYWslMjBwYW5lZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    image: "https://www.chefajaychopra.com/assets/img/recipe/1-1666433552palakpaneer1webp.webp",
     category: "main",
     isVegetarian: true,
     rating: 4.6
@@ -128,7 +128,7 @@ export const menuItems: MenuItem[] = [
     name: "Tandoori Roti",
     description: "Traditional Indian bread baked in a clay oven, perfect with curries.",
     price: 40,
-    image: "https://images.unsplash.com/photo-1619413364488-aaebf37b933f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cm90aXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    image: "https://www.cookwithmanali.com/wp-content/uploads/2021/07/Tandoori-Roti-500x500.jpg",
     category: "main",
     isVegetarian: true,
     rating: 4.5
